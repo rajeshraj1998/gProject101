@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gproject101">
+    <!-- To request foreground location access, declare one of these permissions. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/food_icon"
+        android:label="Save Food"
+        android:roundIcon="@mipmap/food_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".adminSiggnedIn"></activity>
+        <activity android:name=".editProfile" />
+        <activity android:name=".loginDonate" />
+        <activity android:name=".siggnedInUser" />
+        <activity android:name=".loggedInUser" />
+        <activity android:name=".cutomerRegis" />
+        <activity android:name=".customerUser" />
+        <activity android:name=".adminUser" />
+        <activity android:name=".landingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
